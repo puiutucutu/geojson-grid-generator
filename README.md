@@ -4,18 +4,6 @@ Code required to generate a hexagon grid tessellation inside the boundaries of a
 
 The generated grid includes those grid cells that overlap or touch the region boundaries.
 
-**1km grid cell**
-
-![screenshot](docs/screenshot-grid-tesselation-1km.png)
-
-**400m grid cell**
-
-![screenshot](docs/screenshot-grid-tesselation-400m.png)
-
-**50m grid cell zoomed in**
-
-![screenshot](docs/screenshot-grid-tesselation-50m-zoomed-in.png)
-
 ## Features
 
 - tessellation of the grid (i.e., resolution, density, etc.) can be updated by adjusting the `cellSide` variable
@@ -48,6 +36,19 @@ npm run start:example
 
 ## Ward Data
 
-Obtained from:
+Obtained from https://open.toronto.ca/dataset/city-wards/
 
-- https://open.toronto.ca/dataset/city-wards/
+## Screenshots
+
+**1km grid cell**
+
+![screenshot](docs/screenshot-grid-tesselation-1km.png)
+
+**400m grid cell**
+
+![screenshot](docs/screenshot-grid-tesselation-400m.png)
+
+**50m grid cell zoomed in**
+
+![screenshot](docs/screenshot-grid-tesselation-50m-zoomed-in.png)
+
