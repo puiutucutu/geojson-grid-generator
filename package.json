@@ -1,0 +1,17 @@
+{
+  "name": "geojson-grid-generator",
+  "main": "src/geojson-grid-generator.js",
+  "scripts": {
+    "start": "node -r esm ./src/geojson-grid-generator.js",
+    "start:example": "parcel ./example/index.html"
+  },
+  "dependencies": {
+    "@turf/turf": "^5.1.6",
+    "esm": "^3.2.25",
+    "normalize.css": "^8.0.1",
+    "ol": "^5.3.3"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
