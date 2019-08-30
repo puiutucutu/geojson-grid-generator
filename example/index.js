@@ -22,8 +22,8 @@ const wardsPolygonScaledUpBBox = turf.bbox(wardsPolygonScaledUp);
 // merge all the wards into one GeoJSON feature
 const wardsMerged = turf.union(...torontoWards.features);
 
-// retain only the first geometry data in the resulting Polygon to filter out
-// residuals from the merge
+// retain only the outer ring of the Polygon, discarding any inner rings (i.e., holes) 
+// that were created in the merge
 wardsMerged.geometry.coordinates = [[...wardsMerged.geometry.coordinates[0]]];
 
 /*
